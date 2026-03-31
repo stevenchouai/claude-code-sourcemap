@@ -80,7 +80,7 @@ export default withMermaid(
     },
     themeConfig: {
       socialLinks: [
-        { icon: 'github', link: 'https://github.com/anthropics/claude-code-sourcemap' },
+        { icon: 'github', link: 'https://github.com/stevenchouai/claude-code-sourcemap' },
       ],
       search: {
         provider: 'local',
