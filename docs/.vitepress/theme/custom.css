@@ -1,0 +1,59 @@
+/* Make mermaid diagrams larger and readable */
+.mermaid {
+  font-size: 16px !important;
+  overflow-x: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+/* Click-to-zoom: when inside a details tag, show full size */
+details.mermaid-zoom {
+  border: none;
+  padding: 0;
+}
+
+/* Mermaid node text should not truncate */
+.mermaid .nodeLabel {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-width: none !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle {
+  rx: 8;
+  ry: 8;
+}
+
+/* Mermaid edge labels */
+.mermaid .edgeLabel {
+  font-size: 13px !important;
+  max-width: none !important;
+}
+
+/* Make flowcharts wider on desktop */
+@media (min-width: 768px) {
+  .mermaid svg {
+    min-width: 600px;
+  }
+}
+
+/* Pie chart specific */
+.mermaid .pieTitleText {
+  font-size: 16px !important;
+}
+
+.mermaid .slice {
+  font-size: 14px !important;
+}
