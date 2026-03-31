@@ -2,12 +2,13 @@
 layout: home
 hero:
   name: Claude Code Internals
-  tagline: 选择语言 / Choose Language
+  text: AI 编程 Agent 架构教程
+  tagline: 请选择语言开始学习 👇 / Choose your language to begin 👇
   actions:
     - theme: brand
-      text: 中文
+      text: 🇨🇳 中文版
       link: /zh/
     - theme: alt
-      text: English
+      text: 🇬🇧 English
       link: /en/
 ---

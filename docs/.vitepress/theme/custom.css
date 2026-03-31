@@ -1,10 +1,60 @@
-/* Make mermaid diagrams larger and readable */
+/* ==========================================
+   Landing page: make language buttons obvious
+   ========================================== */
+
+/* Only target the root landing page hero actions */
+.VPHome .VPHero .actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.VPHome .VPHero .actions .VPButton {
+  padding: 16px 64px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Pulsing border to draw attention */
+.VPHome .VPHero .actions .VPButton.brand {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(100, 108, 255, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(100, 108, 255, 0); }
+}
+
+/* ==========================================
+   Mermaid: base styling
+   ========================================== */
+
 .mermaid {
   font-size: 16px !important;
   overflow-x: auto;
   cursor: zoom-in;
-  transition: transform 0.3s ease;
   max-width: 100%;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.mermaid:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.mermaid::after {
+  content: '🔍 点击放大 / Click to zoom';
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  margin-top: 8px;
 }
 
 .mermaid svg {
@@ -13,13 +63,6 @@
   min-height: 200px;
 }
 
-/* Click-to-zoom: when inside a details tag, show full size */
-details.mermaid-zoom {
-  border: none;
-  padding: 0;
-}
-
-/* Mermaid node text should not truncate */
 .mermaid .nodeLabel {
   white-space: normal !important;
   overflow: visible !important;
@@ -36,24 +79,60 @@ details.mermaid-zoom {
   ry: 8;
 }
 
-/* Mermaid edge labels */
 .mermaid .edgeLabel {
   font-size: 13px !important;
   max-width: none !important;
 }
 
-/* Make flowcharts wider on desktop */
 @media (min-width: 768px) {
   .mermaid svg {
     min-width: 600px;
   }
 }
 
-/* Pie chart specific */
 .mermaid .pieTitleText {
   font-size: 16px !important;
 }
 
 .mermaid .slice {
   font-size: 14px !important;
+}
+
+/* ==========================================
+   Mermaid: fullscreen zoom overlay
+   ========================================== */
+
+.mermaid-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  padding: 24px;
+  backdrop-filter: blur(4px);
+}
+
+.mermaid-overlay-hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.mermaid-overlay-content {
+  max-width: 95vw;
+  max-height: 85vh;
+  overflow: auto;
+  background: var(--vp-c-bg, #fff);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.mermaid-overlay-content svg {
+  max-width: none !important;
+  min-width: 800px;
+  height: auto;
 }
