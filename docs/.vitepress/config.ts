@@ -31,6 +31,7 @@ export default withMermaid(
           nav: [
             { text: '首页', link: '/zh/' },
             { text: '开始学习', link: '/zh/1-what-is-this' },
+            { text: '🍉 吃瓜专区', link: '/zh/leak-story' },
           ],
           sidebar: [
             {
@@ -44,6 +45,12 @@ export default withMermaid(
                 { text: '6. 安全模型：五层护盾', link: '/zh/6-security' },
                 { text: '7. 智能记忆：上下文管理', link: '/zh/7-context' },
                 { text: '8. 自己动手：从读者到构建者', link: '/zh/8-build-your-own' },
+              ],
+            },
+            {
+              text: '番外',
+              items: [
+                { text: '🍉 吃瓜：源码泄露全记录', link: '/zh/leak-story' },
               ],
             },
           ],

@@ -2,8 +2,8 @@
 layout: home
 hero:
   name: Claude Code Internals
-  text: AI 编程 Agent 架构教程
-  tagline: 请选择语言开始学习 👇 / Choose your language to begin 👇
+  text: Not an AI assistant. An operating system.
+  tagline: 510K lines of source code, 42 tools, 5-layer security — Choose your language 👇
   actions:
     - theme: brand
       text: 🇨🇳 中文版
