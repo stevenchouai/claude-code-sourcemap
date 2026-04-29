@@ -3,8 +3,8 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 
 export default withMermaid(
   defineConfig({
-    title: 'Claude Code Internals',
-    description: 'A beginner-friendly guide to how Claude Code works under the hood',
+    title: 'Claude Code Source Map',
+    description: 'Claude Code source-map research and AI coding agent architecture tutorial',
     base: '/claude-code-sourcemap/',
     head: [
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/claude-code-sourcemap/logo.svg' }],
@@ -45,6 +45,7 @@ export default withMermaid(
                 { text: '6. 安全模型：五层护盾', link: '/zh/6-security' },
                 { text: '7. 智能记忆：上下文管理', link: '/zh/7-context' },
                 { text: '8. 自己动手：从读者到构建者', link: '/zh/8-build-your-own' },
+                { text: '9. 研究札记：不只是 RAG', link: '/zh/9-why-agent-loop-not-rag' },
               ],
             },
             {
@@ -79,6 +80,7 @@ export default withMermaid(
                 { text: '6. Security: The Five-Layer Shield', link: '/en/6-security' },
                 { text: '7. Smart Memory: Context Management', link: '/en/7-context' },
                 { text: '8. Build Your Own: From Reader to Builder', link: '/en/8-build-your-own' },
+                { text: '9. Research Note: Not Just RAG', link: '/en/9-why-agent-loop-not-rag' },
               ],
             },
           ],

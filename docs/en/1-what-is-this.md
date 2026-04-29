@@ -8,7 +8,9 @@ It is not a chatbot you only talk to—it is an **AI agent that can actually do 
 
 ## What this site covers
 
-In March 2026, people noticed that Claude Code’s npm package accidentally shipped **source map** files. Using those maps, the community reconstructed roughly **1,884 TypeScript source files**—essentially the full internal implementation.
+In March 2026, people noticed that Claude Code’s npm package accidentally shipped **source map** files. Using those maps, the community reconstructed roughly **1,884 TypeScript source files**, creating a source view that can be studied.
+
+That view helps explain many architecture choices, but it is **not an Anthropic source release** and should not be described as the official internal repository structure or unreleased implementation notes.
 
 This site uses that reconstructed code to explain, in **plain language**:
 
@@ -17,6 +19,7 @@ This site uses that reconstructed code to explain, in **plain language**:
 - How does it stay safe? (A five-layer permission model.)
 - How is context managed? (Compaction and related strategies.)
 - What can you learn—and can you build something like it yourself? (Yes.)
+- Why is it closer to a local agent runtime than codebase RAG? (See the research note.)
 
 ## What you do *not* need
 
@@ -47,6 +50,6 @@ This repository **does not build or run** as a full product. There is no complet
 
 ## Start here
 
-We split Claude Code’s architecture into eight chapters and walk through them like a tour—one main idea per chapter, with diagrams and analogies instead of dumping raw code on you.
+We split Claude Code’s architecture into eight tutorial chapters plus research notes, then walk through them like a tour—one main idea per chapter, with diagrams and analogies instead of dumping raw code on you.
 
 Ready? Let’s start with the big question—[what is the core idea behind Claude Code?](/en/2-core-idea)
