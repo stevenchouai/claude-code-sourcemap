@@ -6,8 +6,22 @@ export default withMermaid(
     title: 'Claude Code Internals',
     description: 'A beginner-friendly guide to how Claude Code works under the hood',
     base: '/claude-code-sourcemap/',
+    sitemap: {
+      hostname: 'https://stevenchouai.github.io/claude-code-sourcemap/',
+    },
     head: [
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/claude-code-sourcemap/logo.svg' }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:title', content: 'Claude Code Internals' }],
+      [
+        'meta',
+        {
+          property: 'og:description',
+          content: 'A beginner-friendly bilingual guide to how Claude Code works under the hood',
+        },
+      ],
+      ['meta', { property: 'og:url', content: 'https://stevenchouai.github.io/claude-code-sourcemap/' }],
+      ['meta', { name: 'twitter:card', content: 'summary' }],
     ],
     cleanUrls: true,
     mermaid: {
