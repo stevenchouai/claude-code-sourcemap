@@ -3,6 +3,10 @@
 [![Tutorial Site](https://img.shields.io/badge/教程网站-在线阅读-blue?style=for-the-badge)](https://stevenchouai.github.io/claude-code-sourcemap/)
 [![GitHub Stars](https://img.shields.io/github/stars/stevenchouai/claude-code-sourcemap?style=for-the-badge)](https://github.com/stevenchouai/claude-code-sourcemap)
 
+<p align="center">
+  <img src="assets/claude-code-architecture-map.svg" alt="Claude Code architecture source-map research flow" width="100%">
+</p>
+
 > [!WARNING]
 > This repository is **unofficial** and is reconstructed from the public npm package and source map analysis, **for research purposes only**.
 > It does **not** represent the original internal development repository structure.

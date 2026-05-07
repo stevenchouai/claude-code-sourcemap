@@ -652,7 +652,7 @@ while True:
 - [OpenCode](https://opencode.ubitools.com/) — 开源的终端 AI Agent，可以参考
 
 ### 相关仓库
-- [claude-code-sourcemap](https://github.com/anthropics/claude-code-sourcemap) — 你正在看的这个
+- [stevenchouai/claude-code-sourcemap](https://github.com/stevenchouai/claude-code-sourcemap) — 你正在看的这个非官方研究仓库
 - [Prajwalsrinvas/claude-code-reverse-engineering](https://github.com/Prajwalsrinvas/claude-code-reverse-engineering) — 逆向工程分析
 - [Yuyz0112/claude-code-reverse](https://github.com/Yuyz0112/claude-code-reverse) — 中文逆向分析项目
 
